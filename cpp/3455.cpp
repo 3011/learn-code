@@ -6,6 +6,6 @@ int main()
 {
     const double e = 2.718281828;
     cout << setprecision(10) << e << endl;
-    cout << setiosflags(ios::fixed) << setprecision(8) << e << endl;
-    cout << resetiosflags(ios::fixed) << setiosflags(ios::scientific) <<  e << endl;
+    cout << fixed << setprecision(8) << e << endl;
+    cout << scientific << e << endl;
 }
