@@ -12,4 +12,6 @@ int main()
     cout << setfill('*') << setw(10) << pi << endl;
     cout << setfill('*') << setw(10) << r << endl;
     cout << setfill('*') << setw(10) << area << endl;
+
+    return 0;
 }

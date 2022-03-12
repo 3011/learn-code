@@ -8,4 +8,6 @@ int main()
     cout << setprecision(10) << e << endl;
     cout << fixed << setprecision(8) << e << endl;
     cout << scientific << e << endl;
+
+    return 0;
 }
