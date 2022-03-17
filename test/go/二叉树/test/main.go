@@ -4,11 +4,33 @@ import (
 	"fmt"
 )
 
-func min[P int|float64](x,y P)P{
-	if x>y{
-		return y
+func isValid(s string) bool {
+	var stack []rune
+	for _, v := range s {
+		switch v {
+		case '(':
+			stack = append(stack, ')')
+		case '[':
+			stack = append(stack, ']')
+		case '{':
+			stack = append(stack, '}')
+		default:
+			if len(stack) > 0 {
+				if v == stack[len(stack)-1] {
+					stack = stack[:len(stack)-1]
+				} else {
+					return false
+				}
+			} else {
+				return false
+			}
+		}
 	}
-	return x
+	if len(stack) == 0 {
+		return true
+	} else {
+		return false
+	}
 }
 
 func main() {
@@ -22,8 +44,8 @@ func main() {
 	// fmt.Scanln(&b)
 	// c = b * 950 / a
 	// fmt.Printf("c: %v\n", c)
-	fmt.Printf("min(3.3, 5.2): %v\n", min(3.4, 5.1))
-	
+	fmt.Printf("isValid(\"([])\"): %v\n", isValid("]"))
+
 }
 
 // func xorOperation(n int, start int) int {
