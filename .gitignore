@@ -1,0 +1,6 @@
+# .gitignore
+
+.vscode
+
+**/a.exe
+**/test.*
