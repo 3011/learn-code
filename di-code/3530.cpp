@@ -5,10 +5,12 @@ using namespace std;
 
 double fac(double x) // 计算阶乘
 {
-    float i, f = 1;
+    double i, f = 1;
 
     for (i = 1; i <= x; i++)
+    {
         f *= i;
+    }
 
     return f;
 }
