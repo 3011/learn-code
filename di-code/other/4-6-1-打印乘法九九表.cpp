@@ -15,9 +15,8 @@ int main()
 
         cout << left << setw(5) << i;
     }
-    cout << endl;
-
-    cout << setfill('.') << setw(49) << "." << setfill(' ') << endl;
+    cout << endl
+         << setfill('.') << setw(49) << "." << setfill(' ') << endl;
 
     for (x = 1; x <= 9; x++)
     {
