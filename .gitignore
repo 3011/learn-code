@@ -1,6 +1,7 @@
 # .gitignore
 
 .vscode
+test
 
 **/a.exe
 **/test.*
