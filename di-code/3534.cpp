@@ -4,16 +4,12 @@ using namespace std;
 bool isprime(int m)
 {
     if (m <= 3)
-    {
         return m > 1;
-    }
 
     for (int i = 2; i < m; i++)
     {
         if (m % i == 0)
-        {
             return false;
-        }
     }
     return true;
 }
