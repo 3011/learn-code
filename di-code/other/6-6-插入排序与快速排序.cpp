@@ -10,6 +10,7 @@ void insert_sort(int nums[], int size)
         {
             if (nums[n - 1] > nums[n])
             {
+                // 按位异或交换
                 nums[n - 1] ^= nums[n];
                 nums[n] ^= nums[n - 1];
                 nums[n - 1] ^= nums[n];
@@ -20,8 +21,7 @@ void insert_sort(int nums[], int size)
 
 int partition(int nums[], int low, int high)
 {
-
-    int pivot = nums[low];
+    int pivot = nums[low]; // 中心轴取最前一位
 
     while (low < high)
     {
@@ -42,9 +42,7 @@ void quick_sort(int nums[], int low, int high)
     if (low < high)
     {
         int pi = partition(nums, low, high);
-
         quick_sort(nums, low, pi - 1);
-
         quick_sort(nums, pi + 1, high);
     }
 }
@@ -53,8 +51,11 @@ int main()
 {
     int n, x;
     cin >> n;
+
+    // 创建两个数组 两种排序方式一人一个
     int *nums_insert = new int[n];
     int *nums_quick = new int[n];
+
     for (int i = 0; i < n; i++)
     {
         cin >> x;
