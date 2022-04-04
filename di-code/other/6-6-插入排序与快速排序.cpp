@@ -62,18 +62,20 @@ int main()
         nums_quick[i] = x;
     }
 
-    insert_sort(nums_insert, n);
     cout << "插入排序结果：" << endl;
+    insert_sort(nums_insert, n);
     for (int i = 0; i < n; i++)
     {
         cout << nums_insert[i] << " ";
     }
     cout << endl;
 
-    quick_sort(nums_quick, 0, n - 1);
     cout << "快速排序结果：" << endl;
+    quick_sort(nums_quick, 0, n - 1);
     for (int i = 0; i < n; i++)
     {
         cout << nums_quick[i] << " ";
     }
+
+    return 0;
 }
