@@ -24,7 +24,7 @@ void handle(int *nums)
     most_index = 0;
     for (int i = 1; i < 10; i++)
         most_index = nums[most_index] > nums[i] ? most_index : i;
-    if (most_index != 0)
+    if (most_index != 9)
     {
         nums[most_index] ^= nums[9];
         nums[9] ^= nums[most_index];
@@ -47,6 +47,6 @@ int main()
     input(nums);
     handle(nums);
     output(nums);
-    
+
     return 0;
 }
