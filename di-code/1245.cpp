@@ -8,17 +8,14 @@ int main()
     cin >> a >> b >> c;
     double sum, k;
     for (k = 1; k <= a; k++)
-    {
         sum += k;
-    }
+
     for (k = 1; k <= b; k++)
-    {
         sum += k * k;
-    }
+
     for (k = 1; k <= c; k++)
-    {
         sum += 1 / k;
-    }
+
     cout << fixed << setprecision(2) << sum;
 
     return 0;
