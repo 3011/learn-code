@@ -12,7 +12,7 @@ void stringcmp(char *str1, char *str2)
         i++;
     }
 
-    if (int(str1[i]) > int(str2[i]))
+    if (str1[i] > str2[i])
         cout << str1 << ">" << str2 << endl;
     else if (str1[i] < str2[i])
         cout << str1 << "<" << str2 << endl;
