@@ -4,6 +4,7 @@ using namespace std;
 void stringcmp(char *str1, char *str2)
 {
     int i = 0;
+    // 获取较短字符串的长度
     while (str1[i] == str2[i])
     {
         if (str1[i] == '\0' || str2[i] == '\0')
