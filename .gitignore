@@ -3,5 +3,7 @@
 .vscode
 test
 
-**/*.exe
-**/test.*
+go.mod
+
+*.exe
+test.*
