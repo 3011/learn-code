@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-void queue::put(int)
+void queue::put(int num)
 {
 }
 
