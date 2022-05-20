@@ -50,7 +50,7 @@ void printNode(node *head)
 
 int main()
 {
-    node *head = new node();
+    node *head = new node;
 
     string cin_data;
     cout << "请输入姓名（以0结束）：" << endl;
