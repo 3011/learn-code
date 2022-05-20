@@ -5,7 +5,7 @@ class queue
 {
 private:
     int data;
-    queue *next;
+    int top;
 
 public:
     void put(int);
