@@ -1,11 +1,16 @@
 #ifndef QUEUE
 #define QUEUE
 
+struct node
+{
+    int data;
+    node *next;
+};
+
 class queue
 {
 private:
-    int data;
-    int top;
+    node *head;
 
 public:
     void put(int);
